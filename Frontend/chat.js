@@ -1,4 +1,4 @@
-const API = "http://localhost:5000";
+const API = "https://blurd-project.onrender.com";
 
 async function sendMessage() {
     const user = document.getElementById("username").value;
