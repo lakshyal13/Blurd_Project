@@ -72,6 +72,8 @@ app.listen(5000, () => {
 
 console.log(process.env.MONGO_URI)
 
+console.log("MONGO URI:", process.env.MONGO_URI);
+
 app.get("/", (req, res) => {
     res.send("BLURD backend running");
 });
