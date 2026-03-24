@@ -9,9 +9,11 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB Connect
+
+
 mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB Connected"))
-.catch(err => console.log(err));
+.catch(err => console.log("Mongo Error:", err));
 
 // Schema
 const messageSchema = new mongoose.Schema({
