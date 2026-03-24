@@ -1,0 +1,146 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #D6E8F5BF;
+    min-height: 100vh;
+    color: #222; /* Darker for visibility */
+    line-height: 1.7;
+    font-size: 18px; /* Bigger base text */
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem; /* more breathing room */
+}
+
+/* Header Section */
+.header-section {
+    margin-bottom: 4rem;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+.text-content {
+    flex: 2;
+}
+
+.main-title {
+    font-size: 2.8rem; /* larger */
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 1.8rem;
+    line-height: 1.3;
+}
+
+.description {
+    font-size: 1.2rem; /* bigger paragraphs */
+    color: #444;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Illustration */
+.illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px; /* taller image block */
+}
+
+.illustration img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+/* Treatments Section */
+.treatments-section {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.section-title {
+    font-size: 2.3rem; /* bigger */
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 2.5rem;
+}
+
+.treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Treatment Cards */
+.treatment-card {
+    background: #4a3f8a;
+    color: white;
+    padding: 2.5rem 2rem; /* more spacious */
+    border-radius: 18px;
+    text-align: left;
+    box-shadow: 0 10px 28px rgba(74, 63, 138, 0.35);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.treatment-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(74, 63, 138, 0.45);
+}
+
+.treatment-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.treatment-card.medication {
+    background: linear-gradient(135deg, #4a3f8a 0%, #5d4e9e 100%);
+}
+
+.treatment-card.behavioral {
+    background: linear-gradient(135deg, #4a3f8a 0%, #6b5bb3 100%);
+}
+
+.treatment-card.lifestyle {
+    background: linear-gradient(135deg, #4a3f8a 0%, #7968c8 100%);
+}
+
+.card-title {
+    font-size: 1.5rem; /* larger card headings */
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-description {
+    font-size: 1.1rem; /* bigger paragraph text */
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    z-index: 1;
+}

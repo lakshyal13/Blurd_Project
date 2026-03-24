@@ -1,0 +1,221 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #D6E8F5BF;
+    min-height: 100vh;
+    color: #222; /* Darker for better visibility */
+    line-height: 1.7;
+    font-size: 18px; /* Increased base font */
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1100px; /* wider */
+    margin: 0 auto;
+    padding: 4rem 2.5rem;
+}
+
+/* Header Section */
+.page-header {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.main-title {
+    font-size: 2.8rem; /* Bigger */
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 1.2rem;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: #444;
+    font-weight: 400;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Understanding ADHD Section */
+.understanding-section {
+    margin-bottom: 4.5rem;
+}
+
+.understanding-card {
+    background: linear-gradient(135deg, #4a3f8a 0%, #3d2d6b 100%);
+    color: white;
+    padding: 3rem; /* Bigger */
+    border-radius: 15px;
+    box-shadow: 0 12px 32px rgba(74, 63, 138, 0.35);
+    text-align: left;
+}
+
+.section-title {
+    font-size: 2rem; /* Increased */
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+    color: white;
+}
+
+.description {
+    font-size: 1.25rem; /* Larger text */
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.95);
+}
+
+/* Common Symptoms Section */
+.symptoms-section {
+    text-align: center;
+}
+
+.symptoms-title {
+    font-size: 2.3rem; /* Bigger */
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 2rem;
+}
+
+.symptoms-description {
+    font-size: 1.15rem;
+    color: #444;
+    margin-bottom: 3.5rem;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+.symptoms-description strong {
+    color: #222;
+}
+
+/* Symptoms Grid */
+.symptoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Larger cards */
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Symptom Cards */
+.symptom-card {
+    background: #4a3f8a;
+    color: white;
+    padding: 2.5rem 2rem; /* Larger */
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(74, 63, 138, 0.35);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.symptom-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.symptom-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 45px rgba(74, 63, 138, 0.45);
+}
+
+.symptom-card.inattention {
+    background: linear-gradient(135deg, #4a3f8a 0%, #5d4e9e 100%);
+}
+
+.symptom-card.hyperactivity {
+    background: linear-gradient(135deg, #4a3f8a 0%, #6b5bb3 100%);
+}
+
+.symptom-card.impulsivity {
+    background: linear-gradient(135deg, #4a3f8a 0%, #7968c8 100%);
+}
+
+.card-title {
+    font-size: 1.4rem; /* Larger */
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.symptom-list {
+    list-style: none;
+    position: relative;
+    z-index: 1;
+}
+
+.symptom-list li {
+    font-size: 1.15rem; /* Bigger text */
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.95);
+    margin-bottom: 0.7rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.understanding-card {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.symptom-card {
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.symptom-card:nth-child(1) { animation-delay: 0.1s; }
+.symptom-card:nth-child(2) { animation-delay: 0.2s; }
+.symptom-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container { padding: 2rem 1rem; }
+    .main-title { font-size: 2.3rem; }
+    .subtitle { font-size: 1.05rem; }
+    .section-title { font-size: 1.6rem; }
+    .description { font-size: 1.05rem; }
+    .symptoms-title { font-size: 1.9rem; }
+    .symptom-card { padding: 2rem; }
+    .card-title { font-size: 1.2rem; }
+    .symptom-list li { font-size: 1.05rem; }
+}
+
+@media (max-width: 480px) {
+    .main-container { padding: 1.5rem 1rem; }
+    .main-title { font-size: 2rem; }
+    .section-title { font-size: 1.4rem; }
+    .symptoms-title { font-size: 1.6rem; }
+    .symptom-card { padding: 1.5rem; }
+    .symptoms-description { font-size: 1rem; }
+}
+
+/* Focus and accessibility */
+.symptom-card:focus {
+    outline: 3px solid rgba(255, 255, 255, 0.5);
+    outline-offset: 2px;
+}

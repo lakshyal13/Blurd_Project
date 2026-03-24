@@ -1,0 +1,116 @@
+/* Color Palette & Fonts */
+:root {
+    --header-bg: #e1dced;
+    --main-bg: #D6E8F5BF;
+    --text-color: #333;
+    --dark-blue: #331e67;
+    --card-bg-dark: #3f2e7b;
+    --white-text: #fff;
+    --active-nav-bg: #3f2e7b;
+    --active-nav-text: #fff;
+
+    --font-heading: 'Roboto', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg);
+    color: var(--text-color);
+    line-height: 1.8;
+    font-size: 20px;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
+
+/* How to Support Section */
+.support-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 60px;
+    background-color: var(--white-text);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.support-text-container {
+    flex: 2;
+}
+
+.main-heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: var(--dark-blue);
+    margin: 0 0 25px;
+}
+
+.support-paragraph {
+    font-size: 2rem;
+    line-height: 1.9;
+    color: #555;
+    text-align: justify;
+}
+
+.support-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+}
+
+.support-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Treatments Section */
+.treatments-section {
+    padding-top: 70px;
+    text-align: center;
+}
+
+.sub-heading {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    margin: 0 0 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.treatment-card {
+    background-color: var(--card-bg-dark);
+    color: var(--white-text);
+    padding: 40px;
+    border-radius: 18px;
+    flex: 1;
+    text-align: left;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0 0 15px;
+}
+
+.card-description {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin: 0;
+}

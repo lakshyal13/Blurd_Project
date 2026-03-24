@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>WELCOME BACK !</h1>
+    <h2>Login to continue.</h2>
+  
+    <form id="loginForm" action="login.php" method="post">
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="password">Password</label>
+      <div class="password-wrapper">
+        <input type="password" id="password" placeholder="*Minimum 8 characters" minlength="8" required>
+        <span id="togglePassword" class="toggle-icon">👁️</span>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="links">
+      <a href="signin.html">Forgot Password?</a>
+      <a href="signin.html">New user? <strong>Sign up</strong></a>
+    </div>
+  </div>
+
+  
+</body>
+</html>

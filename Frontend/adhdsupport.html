@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Support ADHD People - BLURD</title>
+    <link rel="stylesheet" href="adhdsupport.css">
+    
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+
+    <div id="community" class="tab-content active"></div>
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Header Section -->
+        <section class="header-section">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h1 class="main-title">HOW TO SUPPORT ADHD PEOPLE</h1>
+                    <p class="description">
+                        Supporting someone with ADHD means being patient, listening without judgment, and giving clear, simple instructions. Gentle reminders, routines, and flexible options can help them stay on track. Celebrate small wins, avoid shaming, and reduce distractions to make focus easier. Consistent communication and emotional support build trust, and learning about ADHD helps you understand and support them better.
+                    </p>
+                </div>
+                <div class="illustration">
+                    <img src="/images/adhdman.png">
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments Section -->
+        <section class="treatments-section">
+            <h2 class="section-title">TREATMENTS</h2>
+            <div class="treatments-grid">
+                <div class="treatment-card medication">
+                    <h3 class="card-title">MEDICATION</h3>
+                    <p class="card-description">
+                        Stimulants and non-stimulants can help improve focus and control impulsivity
+                    </p>
+                </div>
+
+                <div class="treatment-card behavioral">
+                    <h3 class="card-title">BEHAVIORAL THERAPY</h3>
+                    <p class="card-description">
+                        Teaches coping strategies, time management and organizational skills.
+                    </p>
+                </div>
+
+                <div class="treatment-card lifestyle">
+                    <h3 class="card-title">LIFESTYLE ADJUSTMENTS</h3>
+                    <p class="card-description">
+                        Regular exercise, good sleep balance diet and structured routines to support attention and mood.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+         });
+        
+
+    </script>
+</body>
+</html>

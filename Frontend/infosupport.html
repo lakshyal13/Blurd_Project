@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADHD & Dyslexia</title>
+    <link rel="stylesheet" href="infosupport.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+    <!-- Navbar -->
+     <div id="navbar-placeholder"></div>
+          
+    
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="container">
+            <div class="box adhd-box">
+                <h1>ADHD</h1>
+                <div class="buttons-container">
+                    <a href="adhdinfo.html"><button class="btn show-info-btn">SHOW INFO</button></a>
+                    <a href="adhdsupport.html"><button class="btn support-btn">HOW TO SUPPORT?</button></a>
+                </div>
+            </div>
+            <div class="box dyslexia-box">
+                <h1>DYSLEXIA</h1>
+                <div class="buttons-container">
+                    <a href="dysinfo.html"><button class="btn show-info-btn">SHOW INFO</button></a>
+                   <a href="dyssupport.html"><button class="btn support-btn">HOW TO SUPPORT?</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+<script>
+    fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+
+</script>
+</html>

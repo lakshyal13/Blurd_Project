@@ -1,0 +1,56 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ABE2, #5563DE);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logout-box {
+    background: #fff;
+    padding: 40px 60px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.logout-box h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.logout-box p {
+    color: #555;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.logout-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #5563DE;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.logout-btn:hover {
+    background: #3746a0;
+}

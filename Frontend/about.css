@@ -1,0 +1,92 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f6f6f6;
+  color: #111; /* Darker text for better visibility */
+  line-height: 1.7;
+  font-size: 18px; /* Increased base font size */
+}
+
+/* Container */
+.container {
+  max-width: 1200px; /* Slightly wider */
+  margin: 50px auto;
+  padding: 25px;
+}
+
+/* About Section */
+.about-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.5rem; /* Increased size */
+  margin-bottom: 20px;
+  color: #2a1d55; /* Stronger purple */
+}
+
+.about-text p {
+  font-size: 1.3rem; /* Increased size */
+  color: #222;
+  line-height: 1.8;
+}
+
+.about-image img {
+  max-width: 380px; /* Increased image size */
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Core Values */
+.core-values {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.core-values h3 {
+  font-size: 2rem; /* Bigger heading */
+  margin-bottom: 25px;
+  color: #2a1d55;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #2e1e5a;
+  color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 250px; /* Larger cards */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.25);
+}
+
+.card h4 {
+  margin-bottom: 12px;
+  font-size: 1.4rem; /* Bigger font */
+}

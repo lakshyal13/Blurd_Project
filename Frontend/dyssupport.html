@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Support Dyslexia People - BLURD</title>
+    <link rel="stylesheet" href="dyssupport.css">
+</head>
+<body>
+    <div id="navbar-placeholder"></div>
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Header Section -->
+        <section class="header-section">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h1 class="main-title">HOW TO SUPPORT DYSLEXIA PEOPLE</h1>
+                    <p class="description">
+                        Supporting someone with dyslexia means being patient, encouraging, and focusing on their strengths. Listen without judgment, and give clear, step-by-step instructions. Use tools like audiobooks, speech-to-text software, and visual aids to make reading and writing tasks easier. Celebrate small wins, avoid shaming mistakes, and provide plenty of time for reading or assignments. Consistent encouragement builds confidence, and learning about dyslexia helps you understand and support them better.
+                    </p>
+                </div>
+                <div class="illustration">
+                    <div class="character">
+                        <img src="/images/dysman.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Treatments Section -->
+        <section class="treatments-section">
+            <h2 class="section-title">TREATMENTS</h2>
+            <div class="treatments-grid">
+                <div class="treatment-card educational">
+                    <h3 class="card-title">EDUCATIONAL SUPPORT</h3>
+                    <p class="card-description">
+                        Multisensory methods to improve reading and writing.
+                    </p>
+                </div>
+
+                <div class="treatment-card skill-training">
+                    <h3 class="card-title">SKILL TRAINING</h3>
+                    <p class="card-description">
+                        Focuses on Phonics and comprehension practice to strengthen language skills.
+                    </p>
+                </div>
+
+                <div class="treatment-card lifestyle">
+                    <h3 class="card-title">LIFESTYLE ADJUSTMENTS</h3>
+                    <p class="card-description">
+                        Audio books, colored overlays and technology based tools support learning and reduce frustration.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        fetch("navbar.html")
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+
+    </script>
+</body>
+</html>

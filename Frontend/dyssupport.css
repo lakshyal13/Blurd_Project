@@ -1,0 +1,182 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background: #D6E8F5BF;
+    min-height: 100vh;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+/* Header Section */
+.header-section {
+    margin-bottom: 4rem;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.text-content {
+    flex: 2;
+}
+
+.main-title {
+    font-size: 2.8rem; /* Increased size */
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.description {
+    font-size: 1.1rem; /* Slightly bigger */
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Illustration */
+.illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 350px; /* Slightly taller */
+}
+
+.character {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Treatments Section */
+.treatments-section {
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2rem; /* Slightly bigger */
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-bottom: 2.5rem;
+}
+
+/* Treatments Grid */
+.treatments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; /* Slightly bigger gap */
+    margin-top: 2rem;
+}
+
+/* Treatment Cards */
+.treatment-card {
+    background: #4a3f8a;
+    color: white;
+    padding: 2.5rem 2rem; /* Increased padding */
+    border-radius: 18px;  /* Slightly rounder */
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(74, 63, 138, 0.35); /* Stronger shadow */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.treatment-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.treatment-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(74, 63, 138, 0.4);
+}
+
+.treatment-card.medication {
+    background: linear-gradient(135deg, #4a3f8a 0%, #5d4e9e 100%);
+}
+
+.treatment-card.behavioral {
+    background: linear-gradient(135deg, #4a3f8a 0%, #6b5bb3 100%);
+}
+
+.treatment-card.lifestyle {
+    background: linear-gradient(135deg, #4a3f8a 0%, #7968c8 100%);
+}
+
+/* Card Content */
+.card-title {
+    font-size: 1.4rem; /* Larger title */
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.card-description {
+    font-size: 1rem; /* Slightly bigger */
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.95);
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-description {
+        font-size: 0.95rem;
+    }
+}

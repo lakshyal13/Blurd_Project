@@ -1,0 +1,162 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2.5rem;
+}
+
+/* Header Section */
+.header-section {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+}
+
+.header-section h1 {
+    font-size: 2.8rem;  /* Slightly bigger */
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;  /* Slightly bigger */
+    color: #4a5568;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Understanding Section */
+.understanding-section {
+   background: #4a3f8a;
+    color: white;
+    padding: 3.5rem;
+    border-radius: 15px;
+    margin-bottom: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.understanding-section h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+.understanding-section p {
+    font-size: 1.35rem;
+    line-height: 1.9;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Symptoms Section */
+.symptoms-section {
+    background: white;
+    padding: 3.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.symptoms-section h2 {
+    font-size: 2.4rem;
+    color: #2d3748;
+    margin-bottom: 2rem;
+}
+
+.symptoms-description {
+    color: #4a5568;
+    margin-bottom: 3rem;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.35rem;
+}
+
+/* Symptoms Grid */
+.symptoms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+/* Symptom Cards */
+.symptom-card {
+    background: #4a3f8a;
+    color: white;
+    padding: 3rem;  /* Bigger padding */
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 5px 25px rgba(76, 29, 149, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.symptom-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 35px rgba(76, 29, 149, 0.4);
+}
+
+.symptom-card h3 {
+    font-size: 1.8rem;  /* Larger heading */
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.symptom-card p {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    opacity: 0.95;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 2rem;
+    }
+    
+    .header-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .understanding-section,
+    .symptoms-section {
+        padding: 2.5rem;
+    }
+    
+    .symptoms-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-section h1 {
+        font-size: 2.2rem;
+    }
+    
+    .understanding-section p,
+    .symptoms-description,
+    .symptom-card p {
+        font-size: 1.15rem;
+    }
+    
+    .symptom-card h3 {
+        font-size: 1.5rem;
+    }
+}

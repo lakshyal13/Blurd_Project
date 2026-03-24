@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blurd - About</title>
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+
+
+
+ <div id="navbar-placeholder"></div>
+
+  <!-- Main Content -->
+  <main class="container">
+    <section class="about-section">
+      <div class="about-text">
+        <h2>ABOUT</h2>
+        <p>
+          At Blurd, we believe that neurodiversity is a strength. <br>
+          Our goal is to create a warm, welcoming space where ADHD 
+          and dyslexic individuals can connect, share, and thrive. <br>
+          We provide tools, resources, and a safe space to help you 
+          focus, learn, and be your authentic self.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="/images/adhdman.png" alt="ADHD illustration">
+      </div>
+    </section>
+
+    <section class="core-values">
+      <h3>CORE VALUES</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>INCLUSIVITY</h4>
+          <p>Everyone is welcome here</p>
+        </div>
+        <div class="card">
+          <h4>SUPPORT</h4>
+          <p>A safe place for open conversations.</p>
+        </div>
+        <div class="card">
+          <h4>GROWTH</h4>
+          <p>Helping each other learn and improve</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar-placeholder").innerHTML = data;
+    });
+
+
+  </script>
+</body>
+</html>
