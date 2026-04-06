@@ -86,7 +86,7 @@ frontend/chat.html
 
 
 ## 👨‍💻 Author
-Lakshya Lokhande
+Lakshya Lokhande and Team
 
 ## 📌 Note
 This project is developed as part of academic coursework combining Web Technology, Cloud Computing, and Data Science concepts.
